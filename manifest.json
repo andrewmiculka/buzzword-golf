@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "name": "Buzzword Golf",
+  "version": "0.1",
+
+  "description": "An extension that counts up the buzzwords present on a page and scores it accordingly.",
+  "icons": { "16": "images/icon16.png",
+             "48":  "images/icon48.png",
+             "128": "images/icon128.png"},
+
+  "browser_action": {
+    "default_icon": "images/icon16.png",
+    "default_title": "Buzzword Golf",
+    "default_popup": "popup.html"
+  },
+
+  "permissions": [ "activeTab" ],
+
+  "content_scripts": [
+    {
+
+      "matches": [ "*://*/*" ],
+      "all_frames": true,
+      "js": [ "golf.js" ],
+      "run_at": "document_end"
+
+    }
+  ]
+
+
+
+
+}
