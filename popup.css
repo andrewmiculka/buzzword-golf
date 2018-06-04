@@ -1,0 +1,31 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 100%;
+    min-width: 300px;
+    background: #F0C9B4;
+    color : #13100E;
+}
+#info{
+    float: right;
+    font-size: 40px;
+}
+#gauge{
+    margin: auto;
+    float:left;
+}
+#image{
+    margin: auto;
+    border: 1px solid #021a40;
+    border-radius:5px;
+    box-shadow: 0px 0px 10px #222;
+}
+#response{
+    bottom: 0;
+    clear: both;
+    font-weight: bold;
+    background: #BCC9BB;
+}
+#sub1, #sub2{
+    font-size: 20px;
+    color: #78645A;
+}
