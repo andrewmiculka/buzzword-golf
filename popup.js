@@ -7,7 +7,6 @@ chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
         
         
         for(var key in response.words){
-            console.log('here');
             var newBullet = document.createElement('LI');
             var textNode = document.createTextNode(key + " : " + response.words[key]);
             newBullet.appendChild(textNode);
